@@ -1,0 +1,150 @@
+.theConnect__about h3 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #0C0114;
+}
+.theConnect__about p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+    color: #808080;
+    margin-bottom: 2rem;
+}
+.theConnect__about-header__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theConnect__about-header__img img {
+    /* width: 1280px; */
+    height: 540px;
+}
+
+.theConnect__about-container {
+    margin: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theConnect__about-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-left: 5rem;
+}
+
+.theConnect__about-content__header h2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+    
+    text-align: start;
+    letter-spacing: -0.04em;
+    
+    color: #0C0114;
+}
+
+.theConnect__about-content__header div {
+    width: 128px;
+    height: 4px;
+    background: var(--color-subtext);
+    border-radius: 6px;
+    margin-top: 0.25rem;
+}
+
+.theConnect__about-content p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    word-spacing: 3px;
+    color: var(--color-text);
+    text-align: start;
+
+    margin-top: 1.5rem;
+    padding-right: 3rem;
+}
+
+.theConnect__about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+}
+
+.theConnect__about-image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .theConnect__about {
+        flex-direction: column;
+    }
+
+    .theConnect__about-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .theConnect__about-content h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .theConnect__about-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .theConnect__about-content__people {
+        flex-direction: column;
+    }
+
+    .theConnect__about-content__people p {
+        margin: 0;
+    }
+
+    .theConnect__about-content__input input,
+    .theConnect__about-content__input button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .theConnect__about-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .theConnect__about-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .theConnect__about-content__input input,
+    .theConnect__about-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

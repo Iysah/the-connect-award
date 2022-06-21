@@ -1,0 +1,355 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: var(--color-footer) url('../../assets/Group12.png');
+    background-size: cover;
+    background-position: center;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    max-width: 800px;
+    min-width: 600px;
+    height: 90vh;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+/* MODAL STYLING ENDS HERE  */
+
+
+/* ACTIVE AND HIDDEN STYLING */
+.active {
+    display: block;
+}
+.hidden {
+    display: hidden;
+}
+
+/* LOGIN STYLING START HERE */
+
+.theConnect__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.theConnect__login h2 {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.04em;
+    margin: 1rem;
+}
+.theConnect__login h4 {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.04em;
+}
+
+.theConnect__login p {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-top: 1rem;
+}
+.theConnect__signup .sign-link,
+.theConnect__login .sign-link {
+    color: var(--color-subtext);
+    font-family: var(--font-family);
+}
+
+.theConnect__login-form_divide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px 0;
+}
+
+.theConnect__login-form_divide .thin-line {
+    background: #A6A6A6;
+    width: 204px;
+    height: 1px;
+    margin: 0 10px;
+}
+.theConnect__login-form_divide .line-text{
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #A6A6A6;
+}
+
+.theConnect__login-form_google {
+    width: 464px;
+    height: 56px;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+    color: #150221;
+
+    background: rgba(216, 205, 224, 0.1);
+    border: 1px solid #D8CDE0;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+.theConnect__login-form_input input {
+    width: 464px;
+    height: 56px;
+    /* margin-bottom: 1rem; */
+}
+
+.theConnect__login-form_input:first-child{
+    margin-top: 15px;
+    margin-bottom: 1.5rem;
+}
+.theConnect__login-form_input:last-child{
+    margin-top: 15px;
+    /* margin-bottom: 2.8rem; */
+}
+
+.theConnect__login-form_input label,
+.theConnect__login-form_input input {
+    width: 100%;
+}
+.theConnect__login-form_input label {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #0C0114;
+    margin: 10px 0; 
+}
+.theConnect__login-form_input input {
+    padding: 18px 10px;
+    border: 1px solid #D8CDE0;
+    outline: none;
+}
+
+.theConnect__login-form_btn {
+    width: 464px;
+    height: 54px;
+    border: none;
+    background: #3E0563;
+    border-radius: 4px;
+    color: var(--color-bg);
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+    font-family: var(--font-family);
+    margin-top: 15px;
+}
+
+/* LOGIN STYLE ENDS HERE */
+
+
+/* SIGNUP STYLING STARTS HERE */
+
+.signup__modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 0;
+    border-radius: 3px;
+    max-width: 800px;
+    min-width: 600px;
+    /* height: 98vh; */
+}
+
+.theConnect__signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+.theConnect__signup h2 {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.04em;
+    margin-top: 1rem;
+}
+
+.theConnect__signup h4 {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.04em;
+    margin-top: 8px;
+}
+
+.theConnect__signup p {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.theConnect__login-form_container,
+.theConnect__sigup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.theConnect__signup-form_name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 464px;
+}
+.theConnect__signup-name_input {
+    width: 47%;
+}
+.theConnect__signup-name_input label,
+.theConnect__signup-name_input input {
+    width: 100%;
+}
+
+.theConnect__signup-name_input label {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #0C0114;
+    margin: 10px 0; 
+}
+.theConnect__signup-name_input input {
+    padding: 18px 10px;
+    border: 1px solid #D8CDE0;
+    outline: none;
+}
+.theConnect__signup-form_input {
+    width: 464px;
+    height: 56px;
+    margin-bottom: 1.8rem;
+}
+
+.theConnect__signup-form_input label,
+.theConnect__signup-form_input input {
+    width: 100%;
+}
+.theConnect__signup-form_input label {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #0C0114;
+    margin: 10px 0; 
+}
+.theConnect__signup-form_input input {
+    padding: 18px 10px;
+    border: 1px solid #D8CDE0;
+    outline: none;
+}
+
+.theConnect__signup-btn_text {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.theConnect__signup-btn_text .sign-link {
+    color: var(--color-subtext);
+    font-family: var(--font-family);
+}
+ .sign-link:hover {
+    cursor: pointer;
+}
+
+.theConnect__signup-form_btn {
+    width: 464px;
+    height: 54px;
+    border: none;
+    background: #3E0563;
+    border-radius: 4px;
+    color: var(--color-bg);
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+    font-family: var(--font-family);
+    margin-top: 8px;
+}

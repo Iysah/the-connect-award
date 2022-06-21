@@ -1,0 +1,121 @@
+.theConnect__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-footer) url('../../assets/Group12.png');
+    background-size: contain;
+    background-position: center;
+}
+
+.theConnect__footer-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+    text-align: left;
+}
+
+.theConnect__footer-links div {
+    width: 250px;
+    margin: 1rem;
+}
+
+.theConnect__footer-links_logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.theConnect__footer-links_logo img {
+    margin-top: 2rem;
+    width: 160px;
+    height: 97.53px;
+
+    margin-bottom: 1rem;
+}
+.theConnect__footer-copyright_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.theConnect__footer-copyright_text p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    text-align: start;
+}
+
+.theConnect__footer-links_div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.theConnect__footer-links_div h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: var(--color-subtext);
+    font-family: var(--font-family);
+    margin-bottom: 0.9rem;
+}
+
+.theConnect__footer-links_div p {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: var(--font-family);
+    color: #fff;
+
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.theConnect__footer-copyright {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.theConnect__footer-copyright p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    font-family: var(--font-family);
+}
+
+@media screen and (max-width: 850px) {
+    .theConnect__footer-heading h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .theConnect__footer-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .theConnect__footer-links div {
+        margin: 1rem 0;
+    }
+
+    .theConnect__footer-btn p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .theConnect__footer-heading h1 {
+        font-size: 27px;
+        line-height: 38px;
+    }
+}
