@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet, Link } from "react-router-dom";
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.png';
 import './navbar.css';
 import "./modal.css";
@@ -61,7 +61,7 @@ const Navbar = () => {
       <div className="theConnect__navbar-menu">
         {toggleMenu
           ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
+          : <RiMenuLine color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
         {toggleMenu && (
             <div className="theConnect__navbar-menu_container scale-up-center">
                 <div className="theConnect__navbar-menu_container-links">

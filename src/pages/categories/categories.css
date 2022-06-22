@@ -36,7 +36,7 @@
 
 .theConnect__category-content__form {
     width: 100%;
-    margin: 2rem 0 1rem;
+    margin: 2rem 1rem;
 
     display: flex;
     flex-direction: row;
@@ -99,43 +99,55 @@
 }
 
 @media screen and (max-width: 990px) {
-    .theConnect__category-container {
-        flex-direction: column-reverse;
-    }
-
-
-    .theConnect__category-container_groupA {
-        margin: 2rem 0;
-    }
-
-    .theConnect__category-container_groupA .theConnect__category-container_article  {
-       width: 48%;
-    }
-
-    .theConnect__category-container_groupA .theConnect__category-container_article-image {
-        height: 250px;
+    .theConnect__category-container_groupB {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .gpt3__blog-container_groupB {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .gpt3__blog-container_groupA .gpt3__blog-container_article  {
-       width: 100%;
-    }
-
-    .theConnect__past h1 {
-        font-size: 46px;
-        line-height: 52px;
+    .gpt3__category-container_groupB {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width: 550px) {
-    .gpt3__blog-heading h1 {
-        font-size: 34px;
-        line-height: 42px;
+    .theConnect__category > h3 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: -0.04em;
+
+    }
+    
+    .theConnect__category-content__form {
+        flex-direction: row;
+        width: 300px;
+    }
+
+    .theConnect__category-content__input {
+        width: 260px;
+
+        border: 1px solid #DBDBDB;
+        border-radius: 4px;
+    }
+    .theConnect__category-content__input input {
+        width: 90%;
+    }
+
+    .theConnect__category-content__form button {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        padding: 20px 10px;
+
+    }
+
+    .theConnect__category-container_groupB {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
     }
 
 }
