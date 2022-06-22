@@ -163,25 +163,40 @@
 
 @media screen and (max-width: 490px) {
     .theConnect__header-content h1 {
-        font-size: 50px;
-        line-height: 58px;
-        letter-spacing: .4px;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 77px;
+        text-align: center;
+        letter-spacing: -0.06em;
+
+        color: #0C0114;
     }
     
     .theConnect__header-content__form {
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .theConnect__header-content__input {
-        width: 100%;
-        margin-bottom: 1rem;
+        width: 264px;
+        height: 64px;
+
+        border: 1px solid #DBDBDB;
+        border-radius: 4px;
     }
     .theConnect__header-content__input input {
-        width: 200px;
+        width: 70%;
     }
     .theConnect__header-content__form button {
-        width: 150px;
+        width: 98px;
+        height: 64px;
+        background: #3E0563;
+        border-radius: 4px;
+
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
     }
 
     .theConnect__header-content__form button {

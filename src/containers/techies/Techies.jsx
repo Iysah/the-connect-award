@@ -22,6 +22,7 @@ const Techies = () => {
 
               <Link to="/past">Read more</Link>
         </div>
+        
           <div className="theConnect__techies-container">
                <div className="theConnect__techies-box">
                   <img src={boxA } alt="" />

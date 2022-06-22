@@ -55,7 +55,6 @@
     line-height: 19px;
     text-align: center;
 
-    color: #FFFFFF;
     border-radius: 4px;
 }
 
@@ -82,7 +81,7 @@
 }
 
 @media screen and (max-width: 650px) {
-    .theConnect__award-content h1 {
+    .theConnect__award-content h3 {
         font-size: 48px;
         line-height: 60px;
     }
@@ -92,35 +91,46 @@
         line-height: 24px;
     }
     
-    .theConnect__award-content__people {
+    .theConnect__award-content__header {
         flex-direction: column;
     }
 
-    .theConnect__award-content__people p {
+    .theConnect__award-content__header p {
         margin: 0;
     }
-
-    .theConnect__award-content__input input,
-    .theConnect__award-content__input button {
+    .theConnect__award-content a {
         font-size: 16px;
         line-height: 24px;
     }
 }
 
 @media screen and (max-width: 490px) {
-    .theConnect__award-content h1 {
-        font-size: 36px;
-        line-height: 48px;
+    .theConnect__award-content {
+        padding: 1rem ;
+        margin-bottom: 4rem;
     }
 
-    .theConnect__award-content p {
-        font-size: 14px;
+    .theConnect__award-content__header h3 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: -0.04em;
+    }
+
+    .theConnect__award-content__header p {
+        font-weight: 300;
+        font-size: 16px;
         line-height: 24px;
     }
 
-    .theConnect__award-content__input input,
-    .theConnect__award-content__input button {
-        font-size: 12px;
-        line-height: 16px;
+    .theConnect__award-content a {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        background-color: var(--color-btn);
+        color: var(--login-btn);
+        font-family: var(--font-family);
+
     }
 }

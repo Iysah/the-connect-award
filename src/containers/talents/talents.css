@@ -87,33 +87,36 @@
         padding-right: 0;
     }
     .theConnect__talents-container {
-        margin: 2rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
+        flex-direction: column;
     }
-    .theConnect__talents-bg h2 {
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 43.2px;
-        letter-spacing: -6%;
+    .theConnect__talents-box h3 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: -0.04em;
     }
     .theConnect__talents-box {
-        width: 150px;
-        height: 150px;
-        margin: 0 5px;
+        width: 370px;
+        height: 400px;
+        
+        border: 1px solid #DBDBDB;
+        border-radius: 8px;
+        margin: 15px 10px;
     }
     .theConnect__talents-box p {
         font-family: var(--font-family);
+        font-weight: 300;
         font-size: 16px;
-        font-weight: 600;
         line-height: 19px;
-        letter-spacing: 0em;
         text-align: center;
 
     }
     .theConnect__talents-box .theConnect__image {
         width: 94px;
         height: 94px;
+    }
+    .theConnect__talents-box:last-of-type .theConnect__image {
+        width: 150px;
     }
 }

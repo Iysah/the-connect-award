@@ -73,33 +73,36 @@
 }
 
 .theConnect__navbar-menu {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 
     display: none;
     position: relative;
+
 }
 
 .theConnect__navbar-menu svg {
     cursor: pointer;
     color: var(--color-btn) !important;
+  
 }
 
 .theConnect__navbar-menu_container {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     
-    text-align: end;
-    background: var(--color-footer);
-    padding: 2rem;
+    text-align: start;
+    background: var(--color-bg);
+    /* padding: 2rem; */
     position: absolute;
     right: 0;
-    top: 40px;
-    margin-top: 1rem;
-    min-width: 210px;
-    border-radius: 5px;
+    top: 0;
+    width: 600px;
+    height: 50vh;
+    /* border-radius: 5px; */
     box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+    margin-top: 4rem;
 }
 
 .theConnect__navbar-menu_container p {
@@ -117,10 +120,12 @@
 
     .theConnect__navbar-menu {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .theConnect__navbar-links_container p,
     .theConnect__navbar-menu_container p {
-        color: #fff;
+        color: var(--color-text);
     }
 }
 
@@ -130,14 +135,19 @@
     }
     .theConnect__navbar-links_container p,
     .theConnect__navbar-menu_container p {
-        color: #fff;
+        color: var(--color-text);
     }
 }
 
 @media screen and (max-width: 550px) {
+    .theConnect__navbar-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .theConnect__navbar-links_logo img {
-        width: 76px;
-        height: 49.52px;
+        width: 72px;
+        height: 54px;
     }
 
     .theConnect__navbar {
@@ -149,20 +159,38 @@
     }
 
     .theConnect__navbar-menu_container {
-        top: 20px;
+        top: 10px;
+        right: -32px;
+        width: 380px;
+        height: 80vh;
+        margin-top: 4rem;
+    }
+
+    .theConnect__navbar-menu_container-links {
+        width: 100%;
     }
 
     .theConnect__navbar-menu_container-links-sign {
         display: block;
+        margin: 1rem;
     }
     .theConnect__navbar-menu_container-links-sign .login {
         color: var(--color-btn);
         background: var(--login-btn);
         margin-bottom: 10px;
     }
+    .theConnect__navbar-menu_container-links-sign button{
+        margin: 1rem;
+    }
    
     .theConnect__navbar-links_container p,
     .theConnect__navbar-menu_container p {
-        color: #fff;
+        color: var(--color-text);
+        padding: 1.3rem 1rem;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
     }
 }

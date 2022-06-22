@@ -113,19 +113,50 @@
 }
 
 @media screen and (max-width: 490px) {
-    .theConnect__techies-content h1 {
-        font-size: 36px;
-        line-height: 48px;
+    .theConnect__techies {
+        flex-direction: column-reverse;
+        margin-bottom: 9rem;
     }
+
+    .theConnect__techies-container {
+        width: 382px;
+        height: 363.52px;
+        margin-bottom: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1rem 1rem;
+        padding: 15px;
+    }
+
+    .theConnect__techies-box {
+        width: 175px;
+        height: 179px;
+    }
+
+    .theConnect__techies-content__header h3 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: -0.04em;
+     }
+
+     .theConnect__techies-content {
+        margin-bottom: 9rem;
+        padding: 1rem;
+     }
 
     .theConnect__techies-content p {
-        font-size: 14px;
+        font-weight: 300;
+        font-size: 16px;
         line-height: 24px;
+
     }
 
-    .theConnect__techies-content__input input,
-    .theConnect__techies-content__input button {
-        font-size: 12px;
-        line-height: 16px;
+    .theConnect__techies-content a {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
     }
 }

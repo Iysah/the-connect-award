@@ -34,14 +34,14 @@ const Footer = () => (
     </div>
 
     <div className="theConnect__footer-copyright">
-    <div className="theConnect__footer-links_logo">
-        <img src={ logoB } alt="gpt3_logo" />
-        
-      </div>
-      <div className="theConnect__footer-copyright_text">
-        <p>Celebrating Techies Globally</p>
-        <p>@2022 The Connected Magazine - All rights reserved.</p>
-      </div>
+        <div className="theConnect__footer-links_logo">
+            <img src={ logoB } alt="gpt3_logo" />
+            
+          </div>
+          <div className="theConnect__footer-copyright_text">
+            <p>Celebrating Techies Globally</p>
+            <p>@2022 The Connected Magazine - All rights reserved.</p>
+          </div>
     </div>
   </div>
 );

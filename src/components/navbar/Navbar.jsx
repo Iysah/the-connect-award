@@ -49,7 +49,7 @@ const Navbar = () => {
                 <p><Link to="/past">Past editions</Link></p>
                <p><Link to="/future">Future editions</Link></p>
                 <p><Link to="/about">About us</Link></p>
-                <p><Link to="/blog">Make a donation</Link></p>
+                <p><Link to="/donation">Make a donation</Link></p>
             </div>
         </div>
 
@@ -65,11 +65,11 @@ const Navbar = () => {
         {toggleMenu && (
             <div className="theConnect__navbar-menu_container scale-up-center">
                 <div className="theConnect__navbar-menu_container-links">
-                      <p><Link to="#home">Categories</Link></p>
-                      <p><Link to="#pst-editions">Past editions</Link></p>
-                      <p><Link to="#future">Future editions</Link></p>
-                      <p><Link to=".../../pages/about">About us</Link></p>
-                      <p><Link to="#blog">Make a donation</Link></p>
+                      <p><Link to="/categories">Categories</Link></p>
+                      <p><Link to="/past">Past editions</Link></p>
+                      <p><Link to="/future">Future editions</Link></p>
+                      <p><Link to="/about">About us</Link></p>
+                      <p><Link to="/donate">Make a donation</Link></p>
                 </div>
             <div className="theConnect__navbar-menu_container-links-sign">
                 <button type="button" onClick={toggleModal} className='login'>Log In</button>
